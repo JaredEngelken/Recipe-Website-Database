@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Jared's Recipes</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  
+  <body>
+<!--Header----------------------------------------------------------------------------------------------------------------------------->
+        <header class="container">
+            <div class="row">
+                <h1 class="col-sm-4">Contact</h1>
+                <nav class="col-sm-6">
+                    <!-- Search Bar -->
+                    <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                </nav>
+                <nav class="col-sm-2">
+                    <!-- Home Button -->
+                    <form action="home.html">
+                        <button class="btn"><i class="fa fa-home"></i> Home</button>
+                    </form>
+                    <!-- Dropdown Button -->
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn"><i class="fa fa-bars"></i>Menu</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="home.html">Home</a>
+                            <a href="english.html">Englsih Recipes</a>
+                            <a href="deutsch.html">Deutsche Rezepte</a>
+                        </div>
+                    </div>
+                    <script>
+                        /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+                        function myFunction() {
+                        document.getElementById("myDropdown").classList.toggle("show");
+                        }
+                        // Close the dropdown if the user clicks outside of it
+                        window.onclick = function(event) {
+                            if (!event.target.matches('.dropbtn')) {
+                                var dropdowns = document.getElementsByClassName("dropdown-content");
+                                var i;
+                                for (i = 0; i < dropdowns.length; i++) {
+                                var openDropdown = dropdowns[i];
+                                    if (openDropdown.classList.contains('show')) {
+                                        openDropdown.classList.remove('show');
+                                    }
+                                }
+                            }
+                        }
+                    </script>
+                </nav>
+            </div>
+        </header>
+
+<!--Content---------------------------------------------------------------------------------------------------------------------------->
+        <section class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <!--Picture-->
+                    <img src="https://scontent-dus1-1.xx.fbcdn.net/v/t1.0-9/s960x960/43559325_10210003641846468_8338389597402693632_o.jpg?_nc_cat=103&_nc_ohc=goSsUovNE2UAQkzj0qTqCj7R2rGagVGK-twMSYtxMVzguLPMc8KrYT1Vg&_nc_ht=scontent-dus1-1.xx&oh=55b6e884f5b5545dae149d089cae89b0&oe=5E3F5060">
+                </div>
+                <div class="col-sm-8">
+                    <!--Description-->
+                    <p>My name is Jared Engelken. I was born in the U.S.A., but moved to Germany when I turned 24. My adventurous life has taken me all over the world and has given me the opportunity to try and to cook the most colorful dishes from each corner of the globe. This website showcases my favorite recipes.</p>
+                    <p>Mein Name ist Jared Engelken. Ich bin in den USA geboren, bin aber mit 24 Jahren nach Deutschland gezogen. Mein abenteuerliches Leben hat mich in alle Welt geführt und mir die Möglichkeit gegeben, die buntesten Gerichte aus allen Ecken der Welt zu probieren und zu kochen. Auf dieser Website werden meine Lieblingsrezepte vorgestellt.</p>
+                    <div class="row">
+                        <!--Email-->
+                        <div class="col-sm-4">
+                            <div class="row justify-content-center">
+                                <i class="fa fa-envelope-o" style="font-size:24px"></i>
+                                <a href="jengelken1@gmail.com">jengelken1@gmail.com</a>
+                            </div>
+                        </div>
+                        <!--LinkdIn-->
+                        <div class="col-sm-4">
+                            <div class="row justify-content-center">
+                                <a href="https://www.linkedin.com/in/jared-engelken/" title="LinkedIn" class="btn btn-linkedin btn-lg"><i class="fa fa-linkedin fa-fw"></i> LinkedIn</a>
+                            </div>
+                        </div>
+                        <!--Github-->
+                        <div class="col-sm-4">
+                            <div class="row justify-content-center">
+                                <a class="github-button" href="https://github.com/JaredEngelken" data-size="large" aria-label="Follow @JaredEngelken on GitHub">Follow @JaredEngelken</a>
+                                <script async defer src="https://buttons.github.io/buttons.js"></script>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="mailto:jengelken1@gmail.com" method="post" enctype="text/plain">
+                        <!--<input type="text" name="comment" size="50"><br><br>-->
+                        <textarea name="comments" id="comments" placeholder="Write your comment here..." style="width:96%;height:150px;margin:10px;padding:1%;border:10px solid rgb(129, 115, 106);font-size:1.5em;background:url('https://github.com/JaredEngelken/Recipe-Website-Database/blob/master/images/rhealthy-food-pattern_shop_preview.png?raw=true');"></textarea>
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <div class="row justify-content-center">
+                                    <input type="text" placeholder="Name" name="name">
+                                    <input type="text" placeholder="E-mail" name="mail">
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="reset" value="Reset">
+                                <input type="submit" value="Send">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </body>
+
+<!--FOOTER----------------------------------------------------------------------------------------------------------------------------->
+  <footer class="container">
+    <div class="row">
+      <p class="col-sm-4">&copy; 2019 Jared Engelken
+      </p>
+      <div class="col-sm-2">
+        <a href="https://medium.com/">Medium</a>
+      </div>
+      <div class="col-sm-2">
+        <a href="https://github.com/">GitHub</a>
+      </div>
+      <div class="col-sm-2">
+        <a href="https://www.linkedin.com/">Linkdin</a>
+      </div>
+      <div class="col-sm-2">
+        <a href="https://tunein.com/podcasts/">Podcasts</a>
+      </div>
+    </div>
+  </footer>
+</html>

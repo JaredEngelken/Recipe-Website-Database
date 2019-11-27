@@ -1,0 +1,304 @@
+body {
+  font-family: Roboto, sans-serif;
+  background-image: url('https://github.com/JaredEngelken/Recipe-Website-Database/blob/master/images/hypnotize_bg.png?raw=true');
+}
+
+header {
+  padding: 20px 0;
+}
+
+header .row,
+footer .row {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 700;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+a {
+  padding: 0 20px;
+  margin: 0;
+}
+
+/*Main Banner*/
+.jumbotron-home { 
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-image: url(https://github.com/JaredEngelken/Recipe-Website-Database/blob/master/images/FoodBackground.jpg?raw=true);
+  background-size: cover;
+  color: #ffffff;
+  height: 500px;
+}
+.jumbotron-english { 
+  display: flex;
+  align-items: center;
+  background-image: url(https://github.com/JaredEngelken/Recipe-Website-Database/blob/master/images/157476234296784927.jpg?raw=true);
+  background-size: cover;
+  color: #fff;
+  height: 500px;
+}
+.jumbotron-deutsch {
+  display: flex;
+  align-items: center;
+  background-image: url(https://github.com/JaredEngelken/Recipe-Website-Database/blob/master/images/germany-long_01.jpg?raw=true);
+  background-size: cover;
+  color: #fff;
+  height: 500px;
+}
+.jumbotron-breakfast {
+  display: flex;
+  align-items: center;
+  background-image: url(https://github.com/JaredEngelken/Recipe-Website-Database/blob/master/images/breakfast_breakfast-classics_big-two-do-breakfast.jpg?raw=true);
+  background-size: cover;
+  color: #fff;
+  height: 500px;
+}
+
+
+/*Main Banner h2 Text*/
+.jumbotron-home h2 {
+  font-size: 80px;
+  font-weight: 700;
+  align-content: center;
+  text-align: center;
+  margin-top: 20%;
+  color: #fff;
+}
+.jumbotron-english h2 {
+  font-size: 60px;
+  font-weight: 700;
+  align-content: center;
+  text-align: center;
+  margin-top: 20%;
+  color: #fff;
+}
+.jumbotron-deutsch h2 {
+  font-size: 60px;
+  font-weight: 700;
+  align-content: center;
+  text-align: center;
+  margin-top: 20%;
+  color: #fff;
+}
+
+/*Main Banner h3 Text*/
+.jumbotron-home h3 {
+  font-size: 30px;
+  margin: 0 0 20px;
+  color: #fff;
+  text-align: center;
+}
+.jumbotron h3 {
+  margin: 0 0 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.col-sm-6 h3 {
+  margin: 0 0 30px;
+  text-align: center;
+}
+
+section .row img {
+  margin: 0 0 30px;
+  width: 100%;
+}
+
+.col-md-6 {
+  margin: 0 0 30px;
+}
+
+.home-languages {
+  padding: 30px;
+  text-align: center;
+}
+.main-menu {
+  padding: 20px;
+  text-align: center;
+}
+.breakfast {
+  padding: 20px;
+  text-align: center;
+}
+
+.btn.btn-primary {
+  border-radius: 2px;
+  border: 0px;
+  color: #fbd1d5;
+  background-color: #ffffff;
+}
+
+.btn.btn-primary:hover {
+  color: #ffffff;
+  background-color: #fbd1d5;
+}
+
+.btn-secondary {
+  background-color: #2a70e0;
+  color: #ffffff;
+  margin: 0 0 30px;
+}
+
+.portrait {
+  width:  350px;
+  height: 300px;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+}
+
+figure {
+  margin-bottom: 30px;
+}
+
+footer {
+  font-size: 12px;
+  padding: 20px 0;
+}
+
+footer .col-sm-8 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer ul {
+  list-style: none;
+}
+
+
+/* Home Button */
+.btn {
+  background-color: DodgerBlue; /* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 3px 4px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+  margin: 2px;
+}
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+/* Search Bar */
+.active-cyan-2 input[type=text]:focus:not([readonly]) {
+  border-bottom: 1px solid #4dd0e1;
+  box-shadow: 0 1px 0 0 #4dd0e1;
+  padding: 5px;
+  align-content: center;
+  }
+
+/* Dropdown Menu Button */
+.dropbtn {
+  background-color: dodgerblue;
+  color: white;
+  padding: 3px 4px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin: 2px;
+  border-radius: 4px; /* Gives the button rounded corners */
+}
+.dropbtn:hover, .dropbtn:focus {
+  background-color: royalblue;
+  color: black;
+}
+.dropdown {
+  float: right;
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  right: 0;
+  z-index: 1;
+  border-radius: 4px;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown a:hover {background-color: #fff;}
+.show {display: block;}
+
+/* LinkedIn Button */
+html {
+  margin: 40px auto;
+  text-align: center;
+}
+.btn-linkedin {
+  background: #0E76A8;
+  border-radius: 0;
+  color: #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #084461;
+  border-radius: 4px;
+}
+.btn-linkedin:link, .btn-linkedin:visited {
+  color: #fff;
+}
+.btn-linkedin:active, .btn-linkedin:hover {
+  background: #084461;
+  color: #fff;
+}
+
+/* Contact Page Buttons */
+input[type=submit] {
+  padding:3px 4px; 
+  color: white;
+  font-size: 16px;
+  background:dodgerblue; 
+  border:0 none;
+  cursor:pointer;
+  -webkit-border-radius: 4px;
+  border-radius: 4px; 
+}
+input:hover[type=submit]{
+  background-color: royalblue;
+  color: black;
+}
+input[type=reset] {
+  padding:3px 4px; 
+  color: white;
+  font-size: 16px;
+  background:dodgerblue; 
+  border:0 none;
+  cursor:pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 4px; 
+  margin:5px;
+}
+input:hover[type=reset]{
+  background-color: royalblue;
+  color: black;
+}
+input[type=text] {
+  padding:3px 4px;
+  font-size: 16px; 
+  border:0 none;
+  cursor:pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 4px; 
+  margin:5px;
+}
+
