@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Jared's Recipes</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="dinner-style.css" type="text/css" rel="stylesheet">
+  </head>
+  
+  <body>
+    <header class="container">
+      <div class="row">
+        <h1 class="col-sm-4">Jared's Recipes</h1>
+        <nav class="col-sm-6">
+          <!--<a href="education.html">Education</a>
+          <a href="experience.html">Experience</a>
+          <a href="contact.html">Contact</a>-->
+          <!-- Search Bar -->
+          <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+        </nav>
+        <nav class="col-sm-2">
+          <!-- Home Button -->
+          <form action="home.html">
+            <button class="btn"><i class="fa fa-home"></i> Home</button>
+          </form>
+          <!-- Dropdown Button -->
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"><i class="fa fa-bars"></i>Menu</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="home.html">Home</a>
+              <a href="english.html">Englsih Recipes</a>
+              <a href="lunch.html">Lunch</a>
+              <a href="dinner.html">Dinner</a>
+              <a href="snacks.html">Snacks</a>
+              <a href="desserts.html">Desserts</a>
+              <a href="drinks.html">Drinks</a>
+              <a href="contact.html">Contact</a> <!-- EDIT THIS -->
+            </div>
+          </div>
+          <script>
+            /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+          </script>
+        </nav>
+      </div>
+    </header>
+
+<!--Jumbotron Banner------------------------------------------------------------------------------------------------------------------->            
+    <section class="jumbotron-poultry">
+        <div class="container">
+            <h2>Poultry Dinners</h2>
+        </div>
+    </section>
+
+<!--Menu Selection--------------------------------------------------------------------------------------------------------------------->
+    <section class="container">
+      <div class="row-item-recipe">
+        <div class="row justify-content-center">
+          <div class="recipe-titles">
+            <h2>Thanksgiving Turkey</h2>
+          </div>
+        </div>
+        <div class="row">            
+          <div class="col-sm-6">
+            <img border="10" src="https://github.com/JaredEngelken/Recipe-Website-Database/blob/master/images/iStock-610774444.jpg?raw=true">
+          </div>        
+          <div class="col-sm-6">
+            <h3>Amount:</h3>
+            <ul>
+              <li>4+ Servings</li>
+            </ul>
+            <h3>Time:</h3>
+            <ul>
+              <li>2.5+ Hours</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+              <h3>Ingredients:</h3>
+              <ul>
+                <li>1 - turkey</li>
+                <li>2 - celery stalks</li>
+                <li>2 - carrots</li>
+                <li>1 - large onion</li>
+                <li>1/2 cup - butter</li>
+                <li>2 sprigs - fresh rosemary</li>
+                <li>2 sprigs - fresh thyme</li>
+                <li>2 sprigs - fresh sage</li>
+                <li>2 sprigs - fresh parsley</li>
+                <li>salt</li>
+                <li>fresh cracked pepper</li>
+                <li>1 - turkey-sized oven bag</li>
+                <li>1 tbs - flour</li>
+              </ul>
+          </div>
+          <div class="col-sm-6">
+            <h3>Instructions:</h3>
+            <h4>Select a Turkey:</h4>
+            <p>A good rule of thumb is that a turkey weighs 1 lb. per serving without leftovers, and 1.5 lb. per serving with leftovers. For example, a 12 lb. bird would serve 12 people without extras. However, with leftovers a 12 lb. turkey would serve about 8 adults. If the calculated amount of turkey is more than 16 lbs., supplement the additional serving with turkey breasts. Too large of a turkey will not taste or cook as well.</p>
+            <h4>Thaw the Turkey:</h4>
+            <p>There are generally two methods of thawing: refridgerator and cold water, but refridgerator thawing is the safest in terms of bacteria. It will take 5 hours per pound of turkey to thaw in the refridgerator and 1 hour per pound in cold water.</p>
+            <h4>Prepare the Turkey and Cook:</h4>
+            <p>A turkey should always cook for a minumum of 2.5-3 hours plus 15 minutes for every extra 4 lbs.</p>
+            <ol>
+              <li>Pre-heat the oven to 350°F.</li>
+              <li>Slice up the celery and carrots and chop the onion into large wedges.</li>
+              <li>Remove the neck and giblets from the body cavity of the turkey if they're in there.</li>
+              <li>Rub the entire turkey in butter.</li>
+              <li>Salt and pepper the bird liberally.</li>
+              <li>Pack the body cavity with the vegetables and herbs.</li>
+              <li>Sprinckle the flour into the bottom of the oven bag and lay extra vegetables on top, if they didn't all fit inside the turkey.</li>
+              <li>Stuff the bird gently inside the oven bag breast-side down and seal the bag.</li>
+              <li>Lay the turkey breast-side down in a large baking dish so that it appears to be upside-down.</li>
+              <li>Cut several inch-long air vents in the top of the bag and inset an oven thermometer into the thickest part of the inner thigh, not touching bone.</li>
+              <li>Insert the turkey into the oven and bake for the right amount of time or until the thermometer reads at least 165°F-180°F.</li>
+              <li>When the turkey is done baking, remove it from the oven and let it rest in the bag for 15 minutes. </li>
+              <li>Cut away the bag and serve!</li>
+            </ul>
+            <h4>Optional:</h4>
+            <ul>
+              <li>Sprinkle the turkey in paprika for a strong browning effect.</li>
+              <li>Stuff the turkey with breadstuffing instead of the vegetables and herbs. Be sure to add an extra 30 minutes of cooking time.</li>
+              <li>Oil the turkey instead of rubbing it with butter.</li>
+              <li>Save the juices for gravy! See<a href="dinner-sides.html">sides</a>for a good recipe.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <hr/>
+
+      <div class="row-item-recipe">
+        <div class="row justify-content-center">
+          <div class="recipe-titles">
+            <h2>Chicken Caprese</h2>
+          </div>
+        </div>
+        <div class="row">            
+          <div class="col-sm-6">
+            <img border="10" src="https://github.com/JaredEngelken/Recipe-Website-Database/blob/master/images/Caprese-Stuffed-Balsamic-Chicken-IMAGE-16%20(1).jpg?raw=true">
+          </div>        
+          <div class="col-sm-6">
+            <h3>Amount:</h3>
+            <ul>
+              <li>4 Servings</li>
+            </ul>
+            <h3>Time:</h3>
+            <ul>
+              <li>35 Minutes</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+              <h3>Ingredients:</h3>
+              <ul>
+                <li>4 - boneless chicken breasts</li>
+                <li>1 tsp - dried oregano</li>
+                <li>1 tsp - dried basil</li>
+                <li>1/4 cup - olive oil or sun dried tomato oil</li>
+                <li>1/4 cup - sun dried tomatoes</li>
+                <li>2 tbs - brown sugar</li>
+                <li>1 - large fresh mozzarella cheese ball</li>
+                <li>2 - roma tomatoes</li>
+                <li>1/3 cup - balsamic vinegar</li>
+                <li>1 sprig - fresh rosemary</li>
+                <li>12 - fresh basil leaves</li>
+                <li>4 - garlic cloves</li>
+                <li>salt</li>
+                <li>fresh cracked pepper</li>
+              </ul>
+          </div>
+          <div class="col-sm-6">
+            <h3>Instructions:</h3>
+            <ol>
+              <li>Pre-heat the oven to 350°F.</li>
+              <li>Cut a pocket about three-quarter of the way through on the thickest side of each breast, being careful not to cut all the way.</li>
+              <li>Finely chop up the roseamry, mince the garlic, and thinly slice the tomatoes.</li>
+              <li>Mix the rosemary with the oil.</li>
+              <li>Season the chicken with salt, pepper, and dried herbs. Pour 1 teaspoon of oil over each breast, rubbing some of the seasoning inside the pockets.</li>
+              <li>Fill each with 2 slices fresh tomato, 2 teaspoons sun dried tomato strips, one slice mozzarella cheese and basil leaves.</li>
+              <li>Seal with 3-4 toothpicks diagonally to keep the filling inside while cooking.</li>
+              <li>Heat 2 teaspoons of oil in a skillet or non-stick pan over medium-high heat. Add the chicken and fry for 2 minutes on each side until golden.</li>
+              <li>While the chicken is cooking, mix together the garlic, balsamic vinegar and brown sugar. Pour the mixture into the pan around the chicken; bring to a simmer while stirring occasionally, until the glaze has slightly thickened or about 2-3 minutes.</li>
+              <li>Transfer the chicken to an oiled baking sheet and insert it into the preheated oven for 10-15 minutes, or until the chicken is cooked through  so that a thermometer reads 165°F and the cheese has melted.</li>
+              <li>Remove the chicken from the oven, take out the toothpicks, and drizzle the pan juices over top.</li>
+              <li>Serve!</li>
+            </ul>
+            <h4>Optional:</h4>
+            <ul>
+              <li>Top with chopped parsely</li>
+              <li>Pack sliced vegetables like zucchini, broccoli, asparagus, and cauliflower around the breasts while in the oven, topped with oil, salt, and pepper for a good side dish.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  
+<!--FOOTER----------------------------------------------------------------------------------------------------------------------------->
+  <footer class="container">
+    <div class="row">
+      <p class="col-sm-4">&copy; 2019 Jared Engelken
+      </p>
+      <div class="col-sm-2">
+        <a href="https://medium.com/">Medium</a>
+      </div>
+      <div class="col-sm-2">
+        <a href="https://github.com/">GitHub</a>
+      </div>
+      <div class="col-sm-2">
+        <a href="https://www.linkedin.com/">Linkdin</a>
+      </div>
+      <div class="col-sm-2">
+        <a href="https://tunein.com/podcasts/">Podcasts</a>
+      </div>
+    </div>
+  </footer>
+</html>
