@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Jared's Recipes</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="desserts-style.css" type="text/css" rel="stylesheet">
+  </head>
+  
+  <body>
+        <header class="container">
+                <div class="row">
+                  <h1 class="col-sm-4">Jared's Recipes</h1>
+                  <nav class="col-sm-6">
+                    <!--<a href="education.html">Education</a>
+                    <a href="experience.html">Experience</a>
+                    <a href="contact.html">Contact</a>-->
+                    <!-- Search Bar -->
+                    <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                  </nav>
+                  <nav class="col-sm-2">
+                    <!-- Home Button -->
+                    <form action="home.html">
+                        <button class="btn"><i class="fa fa-home"></i> Home</button>
+                    </form>
+                    <!-- Dropdown Button -->
+                    <div class="dropdown">
+                      <button onclick="myFunction()" class="dropbtn"><i class="fa fa-bars"></i>Menu</button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="home.html">Home</a>
+                          <a href="english.html">Englsih Recipes</a>
+                          <a href="lunch.html">Lunch</a>
+                          <a href="dinner.html">Dinner</a>
+                          <a href="snacks.html">Snacks</a>
+                          <a href="desserts.html">Desserts</a>
+                          <a href="drinks.html">Drinks</a>
+                          <a href="contact.html">Contact</a> <!-- EDIT THIS -->
+                        </div>
+                    </div>
+                    <script>
+                      /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+                      function myFunction() {
+                        document.getElementById("myDropdown").classList.toggle("show");
+                      }
+                      // Close the dropdown if the user clicks outside of it
+                      window.onclick = function(event) {
+                        if (!event.target.matches('.dropbtn')) {
+                          var dropdowns = document.getElementsByClassName("dropdown-content");
+                          var i;
+                          for (i = 0; i < dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show')) {
+                              openDropdown.classList.remove('show');
+                            }
+                          }
+                        }
+                      }
+                    </script>
+                  </nav>
+                </div>
+            </header>
+
+<!--Jumbotron Banner------------------------------------------------------------------------------------------------------------------->            
+    <section class="jumbotron-ovendesserts">
+        <div class="container">
+            <h2>Bakes</h2>
+        </div>
+    </section>
+
+<!--Menu Selection--------------------------------------------------------------------------------------------------------------------->
+<section class="container">
+    <div class="row-item-recipe">
+      <div class="row justify-content-center">
+        <div class="recipe-titles">
+          <h2>Chocolate Souffle</h2>
+        </div>
+      </div>
+      <div class="row">            
+        <div class="col-sm-6">
+          <img border="10" src="https://github.com/JaredEngelken/Recipe-Website-Database/blob/master/images/souffles%20choco.jpg?raw=true">
+        </div>        
+        <div class="col-sm-6">
+          <h3>Amount:</h3>
+          <ul>
+            <li>2 Servings</li>
+          </ul>
+          <h3>Time:</h3>
+          <ul>
+            <li>1/2-1 Hour</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+            <h3>Ingredients:</h3>
+            <ul>
+              <li>2 - 5-oz ramekins</li>
+              <li>Melted butter and sugar to prep ramekins</li>
+              <li>1 tbs -  butter</li>
+              <li>1 tbs - flour</li>
+              <li>1/4 cup - cold milk</li>
+              <li>1 pinch - salt</li>
+              <li>1 pinch - cayenne pepper</li>
+              <li>2 oz - dark chocolate (~70% cocoa is good)</li>
+              <li>1 - large egg yolk</li>
+              <li>2 - large egg whites</li>
+              <li>1 pinch - cream of tartar / a few drops of lemon juice or vinegar</li>
+              <li>1 tbs - white sugar</li>
+            </ul>
+        </div>
+        <div class="col-sm-6">
+            <h3>Instructions:</h3>
+            <h4>Prepare Ramekins:</h4>
+            <ol>
+              <li>Apply melted butter all over the inside of the ramekin.</li>
+              <li>Pour granulated sugar into ramekin and rotate around so that the sugar coats the entire inside.</li>
+            </ol>
+            <h4>Prepare Batter:</h4>
+            <ol>
+              <li>Break up chocolate and put in metal bowl over a pot of hot water, just below simmering.</li>
+              <li>Make a rue by melt butter in saucepan and then whisking in flour.</li>
+              <li>Cook on medium heat for about a minute while stirring.</li>
+              <li>Reduce heat to low and whisk in cold milk.</li>
+              <li>Wait for the mixture to thicken then transfer the rue to the chocolate.</li>
+              <li>Add the salt and cayenne pepper.</li>
+              <li>Stir together with a spatula.</li>
+              <li>Add an egg yolk and mix again. Then leave it over the hot water.</li>
+            </ol>
+            <h4>Prepare the Meringue:</h4>
+            <ol>
+              <li>Place the egg whites in a large mixing bowl.</li>
+              <li>Add cream of tartar or lemon juice or vinegar.</li>
+              <li>Whisk the egg whites till they're foamy.</li>
+              <li>Add about a third of the sugar and continue whisking. After a bit, add another third and continue whisking. Again, after a bit, add the last third and continue whisking.</li>
+              <li>Keep whisking until the egg whites resemble stiff shaving cream.</li>
+            </ol>
+            <h4>Bring it Together:</h4>
+            <ol>
+                <li>Preheat the oven to 375°F.</li>
+              <li>Add a little less than half the egg whites to the chocolate mixture and stir it all together.</li>
+              <li>Add the rest of the egg whites and carefully fold the mixture together until the egg whites are all gone and the mixture is a light brown. Do not over-stir!</li>
+              <li>Transfer the better to the ramekins. Fill to the lip.</li>
+              <li>Wipe away any drips so that the souffles rise straight.</li>
+              <li>Place the ramekins on a pan and transfer them to the oven to bake at 375°F for 12-15 minutes or until they have risen above the edge of the ramekin.</li>
+              <li>Remove from oven and serve immediately!</li>
+            </ol>
+            <h4>Optional:</h4>
+            <ul>
+              <li>Garnish the souffles with powdered cocoa, a mint sprig, or chocolate syrup.</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+
+    <hr/>
+
+    <div class="row-item-recipe">
+            <div class="row justify-content-center">
+              <div class="recipe-titles">
+                <h2>Real Pumpkin Pie</h2>
+              </div>
+            </div>
+            <div class="row">            
+              <div class="col-sm-6">
+                <img border="10" src="https://github.com/JaredEngelken/Recipe-Website-Database/blob/master/images/pumpkin-pie.jpeg?raw=true">
+              </div>        
+              <div class="col-sm-6">
+                <h3>Amount:</h3>
+                <ul>
+                  <li>2 Pies / 16 Servings</li>
+                </ul>
+                <h3>Time:</h3>
+                <ul>
+                  <li>3 Hours</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                  <h3>Ingredients:</h3>
+                  <h4>Crust Ingredients:</h4>
+                  <ul>
+                        <li>2 cups - flour</li>
+                        <li>1 tsp - salt</li>
+                        <li>1/2 cup -  shortening, lard, or fat</li>
+                        <li>4 tbs - butter</li>
+                        <li>2 tbs - cold water (add extra by the teaspoon as needed)</li>
+                  </ul>
+                  <h4>Filling Ingredients:</h4>
+                  <ul>
+                        <li>1 Hokaido pumpkin or any small, sweet, fleshy pumpkin</li>
+                        <li>3 eggs</li>
+                        <li>3/4 cup - brown sugar</li>
+                        <li>2 tbs - molasses</li>
+                        <li>1 tsp - salt</li>
+                        <li>1/8 tsp - baking soda</li>
+                        <li>1/2 tsp - cinnamon</li>
+                        <li>1/4 tsp - nutmeg</li>
+                        <li>1/2 tsp - ginger</li>
+                        <li>1/4 tsp - cloves</li>
+                        <li>1 tsp - vanilla</li>
+                        <li>2 cups - scalded milk or 1 cup - cream and 1 cup - scalded milk</li>
+                        <li>2 - pie crusts</li>
+                    </ul>
+              </div>
+              <div class="col-sm-6">
+                  <h3>Instructions:</h3>
+                  <h4>Crust Instructions:</h4>
+                  <ol>
+                    <li>Preheat oven to 425°F.</li>
+                    <li>Mix the ingredients together in a large bowl. Less mixing is better as too much makes the crust tough.</li>
+                    <li>Continue mixing and kneading until a semi-dry, semi-sticky dough ball forms.  </li>
+                    <li>Separate in halves and press into  pie pans.</li>
+                    <li>Bake at 425°F for about 10 minutes or until slightly browned. Remove the crusts from the oven if they begin to rise and then punch it back down.</li>
+                  </ol>
+                  <h4>Prepare Pumpkins:</h4>
+                  <ol>
+                    <li>Preheat oven to 350°F.</li>
+                    <li>Cut pumpkin into halves or quarters if it is large.</li>
+                    <li>Scoop out the seeds and stringy pulp.</li>
+                    <li>Set flesh side up on a cookie pan. It may be recommended to wrap the pumpkin pieces in foil.</li>
+                    <li>Bake for 1 hour at 350°F.</li>
+                  </ol>
+                  <h4>Make the Filling:</h4>
+                  <ol>
+                      <li>Preheat the oven to 450°F.</li>
+                    <li>Scoop the pulp from the skin and put in a food processor.</li>
+                    <li>Process the pulp until smooth.</li>
+                    <li>Spoon the pulp onto a towel. </li>
+                    <li>Wrap the towel up and press out the extra water so the pie isn't runny.</li>
+                    <li>In a large mixing bowl, mix together the eggs, sugar, molasses, vanilla, salt, baking soda, and spices.</li>
+                    <li>Stir in 2 cups of the pumpkin pulp.</li>
+                    <li>Add the milk.</li>
+                    <li>Stir thoroughly.</li>
+                  </ol>
+                  <h4>Bring it Together:</h4>
+                  <ol>
+                    <li>Pour the filling into the pie shells.</li>
+                    <li>Bake for 10 minutes at 450°F.</li>
+                    <li>Reduce the heat to 350°F and bake for another 30-40 minutes.</li>
+                    <li>Check that the pies are done by sticking a toothpick into the center. If it comes out clean, then the pie is done baking.</li>
+                    <li>Wait for the pies to cool a bit and then serve!</li>
+                  </ol>
+                  <h4>Optional:</h4>
+                  <ul>
+                    <li>Garnish the pies with decorative dough pieces by rolling the dough flat and using cookie cutters or styling with a fork.</li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+</section>
+</body>
+  
+<!--FOOTER----------------------------------------------------------------------------------------------------------------------------->
+  <footer class="container">
+    <div class="row">
+      <p class="col-sm-4">&copy; 2019 Jared Engelken
+      </p>
+      <div class="col-sm-2">
+        <a href="https://medium.com/">Medium</a>
+      </div>
+      <div class="col-sm-2">
+        <a href="https://github.com/">GitHub</a>
+      </div>
+      <div class="col-sm-2">
+        <a href="https://www.linkedin.com/">Linkdin</a>
+      </div>
+      <div class="col-sm-2">
+        <a href="https://tunein.com/podcasts/">Podcasts</a>
+      </div>
+    </div>
+  </footer>
+</html>
